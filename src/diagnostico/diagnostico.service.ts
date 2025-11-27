@@ -5,9 +5,10 @@ import { FuzzyLogicService } from './fuzzy-logic.service';
 interface ResultadoDiagnostico {
   code: number;
   falla: string;
-  gradoNormalizado: number;
+  grado: number;
   origen: string;
   solucion: string;
+  recomendaciones: string[];
 }
 
 @Injectable()

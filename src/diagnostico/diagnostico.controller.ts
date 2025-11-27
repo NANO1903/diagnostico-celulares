@@ -5,9 +5,10 @@ import { SintomasDto } from './dto/sintomas-diagnostico.dto';
 interface ResultadoDiagnostico {
   code: number;
   falla: string;
-  gradoNormalizado: number; // Usamos el nombre ajustado
+  grado: number;
   origen: string;
   solucion: string;
+  recomendaciones: string[];
 }
 
 @Controller('diagnostico')
